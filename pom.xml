@@ -8,12 +8,12 @@
     <url>https://github.com/clean-arch-enablers-project/cae-utils-context/blob/main/README.md</url>
     <groupId>com.clean-arch-enablers</groupId>
     <artifactId>cae-context</artifactId>
-    <version>6.0.0-RC1</version>
+    <version>6.0.0-RC2</version>
     <packaging>jar</packaging>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
     <scm>
@@ -36,13 +36,13 @@
         <dependency>
             <groupId>com.clean-arch-enablers</groupId>
             <artifactId>cae-mapped-exceptions</artifactId>
-            <version>1.0.0</version>
+            <version>6.0.0-RC1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>1.18.42</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
