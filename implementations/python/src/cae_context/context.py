@@ -6,9 +6,10 @@ from uuid import UUID, uuid4
 
 class ExecutionTracker:
 
-    starting_time: datetime | None = None
-    ending_time: datetime | None = None
-    latency: int | None = None
+    def __init__(self) -> None:
+        self.starting_time: datetime | None = None
+        self.ending_time: datetime | None = None
+        self.latency: int | None = None
 
     def start_tracking(self) -> None:
         if self.has_started():
@@ -50,11 +51,13 @@ class ExecutionTracker:
 
 class GenericExecutionManager(ExecutionTracker):
 
-    subject: str | None = None
-    inbound: bool | None = None
-    exception: Exception | None = None
-    input: object | None = None
-    output: object | None = None
+    def __init__(self) -> None:
+        super().__init__()
+        self.subject: str | None = None
+        self.inbound: bool | None = None
+        self.exception: Exception | None = None
+        self.input: object | None = None
+        self.output: object | None = None
 
     def set_subject_and_start_tracking(
             self, subject: str,
