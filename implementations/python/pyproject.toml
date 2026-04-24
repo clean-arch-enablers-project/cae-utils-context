@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cae-utils-context"
+version = "1.0.0rc1"
+dependencies = [
+    "cae-utils-mapped-exceptions==1.0.0rc4"
+]
+description = "Context utility library for Python"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Ze Lucio Jr" }
+]
+keywords = ["execution-context", "workflow-insights", "step-insights", "inner-steps", "cae", "context"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/clean-arch-enablers-project/cae-utils-context"
+Repository = "https://github.com/clean-arch-enablers-project/cae-utils-context"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"cae_mapped_exceptions" = ["py.typed"]
